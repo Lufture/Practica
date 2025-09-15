@@ -1,19 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
+
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 20px;
-    background-color: #f4f4f4;
+    /* Fondo oscuro con efecto de "linterna" */
+    background: radial-gradient(circle at top left, #2e2e51, #0d0d1a);
+    color: #f0f0f0;
+    transition: background 0.5s;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Títulos */
 h1 {
-    color: #333;
+    color: #d1d1d1;
+    /* Neón cyan */
+    text-shadow: 0 0 5px #abcdcd, 0 0 10px #9cdede;
+}
+
+#main-title {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 #team-name {
-    color: #007BFF;
+    color: #dbd9ff;
+    /* Neón rosa */
     margin-bottom: 20px;
+    text-decoration: overline underline;
+    font-family: 'Codystar', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #a66eff, 0 0 10px #c36eff;
 }
 
 /* Sección del integrante */
@@ -21,34 +49,43 @@ h1 {
     width: 150px;
     border-radius: 50%;
     margin: 10px 0;
+    border: 2px solid rgb(206, 206, 206);
+    /* borde neón cyan */
+    box-shadow: 0 0 15px rgb(205, 205, 205);
 }
 
-#member-section p {
+#member-section p, #current-time {
     font-size: 16px;
-    color: #555;
-}
-#member-section #member-photo{
-    border: 3px solid #95a3b1;
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    /* max-width: 200px; */
-    max-height: 200px;
-    object-fit:cover;
-    object-position: top c
+    color: #f0f0f0;
+    text-shadow: 0 0 3px #caeaea;
 }
 
 /* Botones */
 button {
     margin: 10px;
     padding: 10px 15px;
-    background-color:#38618d;
-    border: none;
+    background-color: #2c2c2c;
+    /* oscuro */
+    border: 2px solid #c2dbdb;
+    /* borde neón */
     border-radius: 5px;
-    color: white;
+    color: #ededed;
+    font-weight: bold;
     cursor: pointer;
-    transition: 250ms;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #4c7eb4;
+    background-color: #4d4e4f;
+    /* azul más brillante */
+    box-shadow: 0 0 10px #cacbcb, 0 0 20px #d8dbdb;
+}
+
+#member-section img,
+#member-section p {
+    transition: all 0.5s ease;
+}
+
+button {
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
