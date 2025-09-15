@@ -1,10 +1,10 @@
 // Colores para el fondo (manteniendo idea de linterna/neón)
 const colors = [
     'radial-gradient(circle at top left, #0f0c29, #302b63, #24243e)', // azul oscuro
-    'radial-gradient(circle at top left, #20002c, #744c84ff, #6e48aa)', // morado neón
-    'radial-gradient(circle at top left, #0f2727ff, #203a43, #2c6457ff)', // verde-azul oscuro
-    'radial-gradient(circle at top left, #441521ff, #8f3963ff, #4c2649ff)', // gris-azulado
-    'radial-gradient(circle at top left, #0d0d0dff, #281a2eff, #3a1647ff)'  // clásico azul oscuro
+    'radial-gradient(circle at top left, #20002c, #4c2f57ff, #2c1552ff)', // morado neón
+    'radial-gradient(circle at top left, #0f2727ff, #203a43, #254e45ff)', // verde-azul oscuro
+    'radial-gradient(circle at top left, #341821ff, #52253aff, #3a1c37ff)', // gris-azulado
+    'radial-gradient(circle at top left, #0d0d0dff, #281a2eff, #5e3f2fff)'  // clásico azul oscuro
 ];
 let colorIndex = 0;
 
