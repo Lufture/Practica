@@ -113,3 +113,40 @@ button:hover {
 button {
     transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
+
+
+/* efecto de linterna con el cursor */
+/* Halo principal */
+.cursor-light {
+    position: absolute;
+    width: 20px;
+    /* más pequeño */
+    height: 20px;
+    background: rgba(0, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.5);
+    transition: top 0.05s, left 0.05s;
+    z-index: 999;
+}
+
+/* Partículas pequeñas */
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(0, 255, 255, 0.7);
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(2px);
+    animation: fadeOut 0.8s forwards;
+    z-index: 998;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translate(var(--dx), var(--dy));
+    }
+}
